@@ -1,0 +1,6 @@
+# Containerlab runtime state (SSH configs, TLS certs/keys, per-node runtime dirs)
+clab-noc-sim/
+
+# OS/editor noise
+.DS_Store
+*.swp
