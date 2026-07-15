@@ -21,14 +21,3 @@ instrukcją odtworzenia od zera i opisem napotkanych problemów) w toku.
 
 Containerlab · FRRouting (OSPF) · Docker · net-snmp · snmp_exporter ·
 Prometheus · Grafana
-
-## Status
-
-- [x] Topologia i OSPF (pełne sąsiedztwo, trasy nauczone automatycznie)
-- [x] SNMP monitoring wszystkich routerów
-- [x] Prometheus scrape'uje metryki interfejsów
-- [x] Dashboard Grafana z podglądem stanu i ruchu na żywo
-- [ ] Automatyzacja Ansible (backup configów)
-- [ ] Eskalacja alertów (Alertmanager → ticket → Telegram/email)
-- [ ] Symulacja awarii + raport incydentu
-- [ ] Pełne README z diagramem i instrukcją uruchomienia od zera
