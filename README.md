@@ -5,9 +5,9 @@ full SNMP → Prometheus → Grafana stack. Built to practice routing,
 troubleshooting, and observability the way they actually show up in NOC/SRE
 work.
 
-> 🚧 Work in progress — this is a draft README. A full version (architecture
-> diagram, from-scratch setup instructions, and a write-up of the problems
-> hit along the way) is coming.
+Work in progress — this is a draft README. A full version (architecture
+diagram, from-scratch setup instructions, and a write-up of the problems
+hit along the way) is coming.
 
 ## What's in here
 
@@ -23,14 +23,3 @@ work.
 
 Containerlab · FRRouting (OSPF) · Docker · net-snmp · snmp_exporter ·
 Prometheus · Grafana
-
-## Status
-
-- [x] Topology and OSPF (full adjacency, routes learned automatically)
-- [x] SNMP monitoring on all routers
-- [x] Prometheus scraping interface metrics
-- [x] Grafana dashboard with live status and traffic
-- [ ] Ansible automation (config backup)
-- [ ] Alert escalation (Alertmanager → ticket → Telegram/email)
-- [ ] Simulated outage + incident report
-- [ ] Full README with architecture diagram and from-scratch setup guide
