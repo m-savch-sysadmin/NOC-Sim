@@ -23,3 +23,10 @@ hit along the way) is coming.
 
 Containerlab · FRRouting (OSPF) · Docker · net-snmp · snmp_exporter ·
 Prometheus · Grafana
+
+## Screenshots
+
+![Grafana — NOC-Sim Network Overview](docs/screenshots/grafana-dashboard.png)
+
+Full write-up of Days 1-3, including the problems hit along the way and the
+verification commands used at each step: **[docs/day1-3.md](docs/day1-3.md)**
