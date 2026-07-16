@@ -1,0 +1,11 @@
+all:
+    hosts:
+      r1:
+        ansible_connection: docker
+        ansible_host: clab-noc-sim-r1
+      r2:
+        ansible_connection: docker
+        ansible_host: clab-noc-sim-r2
+      r3:
+        ansible_connection: docker
+        ansible_host: clab-noc-sim-r3

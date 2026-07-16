@@ -1,0 +1,14 @@
+---
+- name: Backup FRR router configs
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Get running config
+      ansible.builtin.command: vtysh -c "show running-config"
+      register: running_config
+
+    - name: Save config locally with timestamp
+      delegate_to: localhost
+      ansible.builtin.copy:
+        content: "{{ running_config.stdout }}"
+        dest: "backups/{{ inventory_hostname }}-{{ lookup('pipe', 'date +%Y%m%d-%H%M%S') }}.conf"

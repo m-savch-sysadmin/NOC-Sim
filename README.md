@@ -18,15 +18,22 @@ hit along the way) is coming.
 - **`prometheus/`** — scrape configuration for SNMP via `snmp_exporter`.
 - **`grafana/`** — auto-provisioned datasource and dashboard
   (`network-overview.json`) showing interface status and traffic.
+- **`ansible/`** — automation, run in its own container: a config backup
+  playbook and a change-management playbook (add + verify a static route),
+  talking to the routers over `docker exec` instead of SSH.
 
 ## Stack
 
 Containerlab · FRRouting (OSPF) · Docker · net-snmp · snmp_exporter ·
-Prometheus · Grafana
+Prometheus · Grafana · Ansible
 
 ## Screenshots
 
 ![Grafana — NOC-Sim Network Overview](docs/screenshots/grafana-dashboard.png)
 
-Full write-up of Days 1-3, including the problems hit along the way and the
-verification commands used at each step: **[docs/day1-3.md](docs/day1-3.md)**
+## Write-ups
+
+- **[docs/day1-3.md](docs/day1-3.md)** — topology, OSPF, SNMP, Prometheus,
+  Grafana: what was built, the problems hit, and the verification output.
+- **[docs/day4.md](docs/day4.md)** — Ansible automation over `docker exec`,
+  config backups, and a change-management playbook with live verification.

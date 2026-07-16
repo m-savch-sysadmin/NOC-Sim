@@ -4,3 +4,7 @@ clab-noc-sim/
 # OS/editor noise
 .DS_Store
 *.swp
+
+# Ansible config backups (timestamped, generated on every run) -
+# a few examples are force-added to the repo to show real output
+ansible/backups/*.conf

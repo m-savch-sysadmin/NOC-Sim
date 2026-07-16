@@ -1,0 +1,16 @@
+---
+- name: Add static route via Ansible (change management example)
+  hosts: r1
+  gather_facts: no
+  tasks:
+    - name: Add static route to test network
+      ansible.builtin.command: vtysh -c "configure terminal" -c "ip route 192.168.100.0/24 10.0.12.2" -c "exit" -c "write memory"
+      register: change_result
+
+    - name: Show updated routing table
+      ansible.builtin.command: vtysh -c "show ip route static"
+      register: route_check
+
+    - name: Display result
+      ansible.builtin.debug:
+        var: route_check.stdout_lines
