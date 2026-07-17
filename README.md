@@ -11,15 +11,13 @@ hit along the way) is coming.
 
 ## How this was built
 
-Built as a learning project with Claude (Anthropic) as a pair-programming
-partner — I directed the design, ran and verified every step against the
-live containers, and debugged real failures along the way (a broken SNMP
-package, container networking quirks, an Alertmanager naming bug), but a
-meaningful share of the code and config in later stages was written by
-Claude rather than typed by me. I'm still working through fully
-understanding some of it (particularly the alerting/Python service in
-`escalation-service/`) and wouldn't claim deep mastery of every file here
-yet — that's the honest state of it.
+Built together with Claude (Anthropic) as an AI pair-programming partner.
+I set the direction, made the architecture decisions, and ran and verified
+every step on my own machine — every container, every test, every
+debugging session was real. Claude wrote a large part of the underlying
+code and configuration, particularly for the automation (Ansible) and
+alerting (Python) pieces, while I drove the process end to end and
+diagnosed failures from real output along the way.
 
 ## What's in here
 
