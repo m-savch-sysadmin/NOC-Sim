@@ -9,6 +9,18 @@ Work in progress — this is a draft README. A full version (architecture
 diagram, from-scratch setup instructions, and a write-up of the problems
 hit along the way) is coming.
 
+## How this was built
+
+Built as a learning project with Claude (Anthropic) as a pair-programming
+partner — I directed the design, ran and verified every step against the
+live containers, and debugged real failures along the way (a broken SNMP
+package, container networking quirks, an Alertmanager naming bug), but a
+meaningful share of the code and config in later stages was written by
+Claude rather than typed by me. I'm still working through fully
+understanding some of it (particularly the alerting/Python service in
+`escalation-service/`) and wouldn't claim deep mastery of every file here
+yet — that's the honest state of it.
+
 ## What's in here
 
 - **`topology.clab.yml`** — Containerlab topology: 3 FRR routers (r1-r2-r3)
